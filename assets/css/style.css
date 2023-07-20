@@ -1,0 +1,536 @@
+@import url("./root.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none!important;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.my_container {
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.ff_poppins {
+    font-family: 'poppins';
+}
+
+.max_width_1190 {
+    max-width: 1190px;
+}
+
+.max_width {
+    max-width: 845px;
+}
+
+.pt_12 {
+    padding-top: 12px;
+}
+
+.pt_48 {
+    padding-top: 48px;
+}
+
+.pt_26 {
+    padding-top: 26px;
+}
+
+.gap_38 {
+    gap: 38px;
+}
+
+.py_48 {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+
+/*----------------------------------section----------------------------------*/
+
+nav ul li a {
+    font-weight: 400!important;
+    font-size: var(--fs-sm)!important;
+}
+
+nav ul li a:hover {
+    color: var(--red) !important;
+    font-weight: var(--fw-600)!important;
+}
+
+.nav_btn {
+    padding: 12px 32px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: all linear 300ms;
+}
+
+.nav_btn:hover {
+    background-color: var(--yellow-light);
+    color: var(--white);
+}
+
+.img_set {
+    transform: translateY(-30%);
+}
+
+.img {
+    z-index: 1;
+}
+
+
+/*------------------------section2------------------------*/
+
+.img_set_1 {
+    position: absolute;
+    top: 0%;
+    left: 3%;
+}
+
+.img_set_2 {
+    position: absolute;
+    bottom: 36%;
+    left: -1%;
+}
+
+.img_set_3 {
+    position: absolute;
+    top: 6%;
+    left: 27%;
+}
+
+.img_set_4 {
+    position: absolute;
+    bottom: 31%;
+    left: 22%;
+}
+
+.img_set_5 {
+    position: absolute;
+    top: 8%;
+    right: 29%;
+}
+
+.img_set_6 {
+    position: absolute;
+    top: 1%;
+    right: 2%;
+}
+
+.img_set_7 {
+    position: absolute;
+    bottom: 14%;
+    right: 16%;
+}
+
+.img_set_8 {
+    position: absolute;
+    bottom: 32%;
+    right: 0%;
+}
+
+
+/*------------------------section3-------------------------*/
+
+.button {
+    padding: 15px 32px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: all linear;
+}
+
+button:hover {
+    color: var(--red);
+    background-color: var(--white);
+}
+
+.phara {
+    max-width: 550px;
+    padding-top: 24px;
+    padding-bottom: 36px;
+}
+
+
+/*------------------------section4------------------------*/
+
+.py_12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+
+/*------------------------section_timeline------------------------*/
+
+.timeline_img1 {
+    position: absolute;
+    top: 36%;
+    left: 9%;
+    z-index: 1;
+}
+
+.timeline_img2 {
+    position: absolute;
+    bottom: 7%;
+    left: 3%;
+    z-index: 1;
+}
+
+.timeline_img3 {
+    position: absolute;
+    top: 10%;
+    left: 23%;
+    z-index: 1;
+}
+
+.timeline_img4 {
+    position: absolute;
+    top: 57%;
+    left: 27%;
+    z-index: 1;
+}
+
+.timeline_img5 {
+    position: absolute;
+    top: 27%;
+    right: 27%;
+    z-index: 1;
+}
+
+.timeline_img6 {
+    position: absolute;
+    top: 12%;
+    right: 2%;
+    z-index: 1;
+}
+
+.timeline_img7 {
+    position: absolute;
+    bottom: 12%;
+    right: 3%;
+    z-index: 1;
+}
+
+.timeline_img8 {
+    position: absolute;
+    bottom: 7%;
+    right: 29%;
+    z-index: 1;
+}
+
+.gap_10 {
+    gap: 10px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* The actual timeline (the vertical ruler) */
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: red;
+    top: 2%;
+    bottom: 31%;
+    left: 50%;
+    margin-left: -3px;
+}
+
+
+/* Container around content */
+
+.timelinecontainer {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+
+/* The circles on the timeline */
+
+.timelinecontainer::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -2%;
+    background-color: white;
+    top: 5%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+/* Place the container to the left */
+
+.left {
+    left: 0;
+}
+
+
+/* Place the container to the right */
+
+.right {
+    left: 50%;
+}
+
+
+/* Add arrows to the left container (pointing right) */
+
+
+/* .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+} */
+
+
+/* Add arrows to the right container (pointing left) */
+
+
+/* .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+} */
+
+
+/* Fix the circle for containers on the right side */
+
+.right::after {
+    left: -13px;
+}
+
+
+/* The actual content */
+
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+
+@media screen and (max-width: 768px) {
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 31px;
+    }
+    /* Full-width containers */
+    .timelinecontainer {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    /* Make sure that all arrows are pointing leftwards */
+    .timelinecontainer::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
+}
+
+
+/*------------------section_according------------------*/
+
+.mt_12 {
+    margin-top: 12px;
+}
+
+.ml_24 {
+    margin-left: 24px;
+}
+
+.mr_24 {
+    margin-right: 24px;
+}
+
+.accordion-button {
+    background-color: var(--yellow-light) !important;
+}
+
+.accordion {
+    --bs-accordion-bg: var(--yellow-light)!important;
+    --bs-accordion-border-color: var(--yellow-light)!important;
+}
+
+.accordion-button:focus {
+    box-shadow: unset!important;
+    color: var(--black) !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--black) !important;
+}
+
+.accordion-flush .accordion-item .accordion-button,
+.accordion-flush .accordion-item .accordion-button.collapsed {
+    border-radius: 0;
+}
+
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: var(--bs-accordion-inner-border-radius);
+    border-top-right-radius: var(--bs-accordion-inner-border-radius);
+}
+
+button:focus:not(:focus-visible) {
+    outline: 0;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: var(--bs-accordion-btn-focus-border-color);
+    outline: 0;
+    box-shadow: var(--bs-accordion-btn-focus-box-shadow);
+}
+
+.accordion-button:hover {
+    z-index: 2;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: var(--bs-accordion-active-bg);
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--black) !important;
+}
+
+.accordion-button:focus {
+    box-shadow: unset!important;
+    color: var(--black) !important;
+}
+
+button:hover {
+    color: var(--black) !important;
+}
+
+.icon_box {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 3;
+    position: fixed;
+    top: 2%;
+    right: 4%;
+}
+
+.icon_box span {
+    width: 100%;
+    height: 2px;
+    display: flex;
+    margin-top: 5px;
+}
+
+@media (max-width:1200px) {
+    .my_nav {
+        position: fixed;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        transform: translate(-50% -50%);
+        transition: all linear 400ms;
+        justify-content: center;
+        z-index: 2;
+        background-color: var(--white);
+    }
+    input[type="checkbox"]:checked~ul {
+        right: 0%
+    }
+}
+
+@media (min-width:576px) {
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-color: red;
+        bottom: 22%;
+        margin-left: -3px;
+    }
+}
+
+@media (min-width:768px) {
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-color: red;
+        bottom: 27%;
+        left: 50%;
+        margin-left: -3px;
+    }
+}
+
+@media (min-width:992px) {
+    .pt-lg-0 {
+        padding-top: 0;
+    }
+}
+
+@media (min-width:1200px) {
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-color: red;
+        top: 4%;
+        bottom: 25%;
+        left: 50%;
+        margin-left: -3px;
+    }
+    .pt_xl_0 {
+        padding-top: 0;
+    }
+    .d_md_none {
+        display: none;
+    }
+}
